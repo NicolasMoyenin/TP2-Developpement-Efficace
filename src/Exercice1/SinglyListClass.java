@@ -51,7 +51,7 @@ public class SinglyListClass {
 			return next;
 		}
 		
-		public void setElement(Integer newElement) {
+		public void setElement(Integer newElement) { 
 			element = newElement;
 		}
 		
