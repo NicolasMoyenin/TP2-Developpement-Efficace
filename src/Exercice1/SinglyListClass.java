@@ -29,7 +29,7 @@ public class SinglyListClass {
 	
 	private static class Node {
 		
-		// Var
+		// Var 
 		private Integer element;
 		private Node next;
 		
