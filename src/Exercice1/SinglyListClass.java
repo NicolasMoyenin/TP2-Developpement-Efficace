@@ -75,6 +75,18 @@ public class SinglyListClass {
 		
 	}
 	
+	public Integer removeFirst() {
+		if(isEmpty()) {
+			return null;
+		}
+		this.size--;
+		
+		Integer firstElement = header.getElement();
+		Node secondNode = header.getNext();
+		header.setNext(null);
+		header = secondNode;
+		return firstElement;
+	}
 	
 	
 	public long size() {
@@ -104,6 +116,12 @@ public class SinglyListClass {
 	    }
 	    return current.getElement();
 	}
+	
+	
+	//1.2
+	
+	
+	
 	
 	
 	
@@ -160,15 +178,21 @@ public class SinglyListClass {
 		//test 3 : ajoute 2 éléments a la suite.
 		maListe.addLast(2);
 		maListe.addLast(7);
-		System.out.println("Test 3 (5-2-7)"+ maListe);
+		System.out.println("Test 3 (5 2 7)"+ maListe);
 		//test 4 : isEmpty et size
-		System.out.println(maListe.size());
-		System.out.println(maListe.isEmpty());
+		System.out.println("Test 4 (3): " + maListe.size());
+		System.out.println("Test 4 (false): " + maListe.isEmpty());
 		//test 5 : first et last
-		System.out.println(maListe.first());
-		System.out.println(maListe.last());
+		System.out.println("Test 5 (5): " +maListe.first());
+		System.out.println("Test 5 (7): " +maListe.last());
 		//test 6 : addFirst
-		System.out.println(maListe.addFirst(9));
+		maListe.addFirst(9);
+		System.out.println("Test 6 (9 5 2 7) : "+maListe);
+		//test 7 : removeFirst
+		maListe.removeFirst();
+		System.out.println("Test 7 (5 2 7) : "+maListe);
+
+
 		
 	}
 	
