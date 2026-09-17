@@ -23,7 +23,7 @@ public class SinglyListClass {
 		private Node next;
 		
 		//Constructor
-		public Node (Integer s, Node n) { 
+		public Node (Integer s, Node n) {  
 			this.element = s;
 			this.next = n;
 		}
