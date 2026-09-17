@@ -16,11 +16,26 @@ public class SinglyListClass {
 		header = header;
 		size = 1;
 	}
+	
+	
+	public void addLast(Integer element) {
+		Node newNode = new Node(element);
+		if (header == null) {
+			header = newNode;
+			size++;
+			return;
+		}
+	}
+	
 	private static class Node {
 		
 		// Var
 		private Integer element;
 		private Node next;
+		
+		public Node(Integer element) {
+			this.element = element;
+		}
 		
 		//Constructor
 		public Node (Integer s, Node n) {  
