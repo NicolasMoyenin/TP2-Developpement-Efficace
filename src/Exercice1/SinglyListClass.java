@@ -10,6 +10,12 @@ public class SinglyListClass {
 		header = null;
 		size = 0; 
 	}
+	
+	public SinglyListClass(Node header) {
+		this();
+		header = header;
+		size = 1;
+	}
 	private static class Node {
 		
 		// Var
