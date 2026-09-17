@@ -8,7 +8,7 @@ public class SinglyListClass {
 	
 	public SinglyListClass() {
 		header = null;
-		size = 0;
+		size = 0; 
 	}
 	private static class Node {
 		
